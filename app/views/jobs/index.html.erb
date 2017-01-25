@@ -19,11 +19,10 @@
     </ul>
 </div>
 
-<table class="table table-boldered">
+<table class="table table-boldered table table-hover">
     <thead>
         <tr>
-            <td>
-                职缺</td>
+            <td>职缺</td>
             <td>薪资下限</td>
             <td>薪资上限</td>
             <td>刊登时间</td>
@@ -33,16 +32,16 @@
     <tbody>
         <% @jobs.each do |job| %>
         <tr>
-            <td>
+            <td class="active">
                 <%= link_to(job.title, job_path(job)) %>
             </td>
-            <td>
+            <td class="success">
                 <%= job.wage_lower_bound %>
             </td>
-            <td>
+            <td class="warning">
                 <%= job.wage_upper_bound %>
             </td>
-            <td>
+            <td class="danger">
                 <%= job.created_at %>
             </td>
         </tr>
