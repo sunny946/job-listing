@@ -19,9 +19,9 @@
     </ul>
 </div>
 
-<table class="table table-boldered table table-hover">
+<table class="table table1 table-boldered table-hover">
     <thead>
-        <tr>
+        <tr class="tr1">
             <td>职缺</td>
             <td>薪资下限</td>
             <td>薪资上限</td>
@@ -32,20 +32,23 @@
     <tbody>
         <% @jobs.each do |job| %>
         <tr>
-            <td class="active">
+            <td>
                 <%= link_to(job.title, job_path(job)) %>
             </td>
-            <td class="success">
+            <td>
                 <%= job.wage_lower_bound %>
             </td>
-            <td class="warning">
+            <td>
                 <%= job.wage_upper_bound %>
             </td>
-            <td class="danger">
+            <td>
                 <%= job.created_at %>
             </td>
         </tr>
         <% end %>
     </tbody>
-
 </table>
+
+<div class="text-center">
+    <%= will_paginate(@jobs, renderer: BootstrapPagination::Rails) %>
+</div>

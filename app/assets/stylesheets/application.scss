@@ -228,3 +228,35 @@ padding: 10px;
 .jobs-search-form{
   margin-top: 8px;
 }
+//搜索功能设计结束
+
+//jobs_index界面的表格
+.table1{
+  padding-top: 10px;
+  margin: 50px 100px 0 100px;
+  max-width: 1250px;
+  text-align: center;
+
+  font-size: 1.2em;
+  background-color: rgba(250,250,250,0.39);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.tr1{
+  background-color: rgba(250,250,250,0.45);
+  font-weight: bolder;
+}
+//over
+
+//jobs_search界面的表格
+.jobs-show {
+  background-color: rgba(250,250,250,0.39);
+  border-bottom: 1px solid #CCC;
+  padding: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+//over
+a:link {color:#880e4f;}
+a:visited {color:purple;}
+a:hover {color:red;}
+a:active {color:red;}
