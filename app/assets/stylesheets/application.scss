@@ -24,6 +24,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
+  width: auto;
 }
 
 .jumbotron h1, .jumbotron .h1 {
@@ -106,6 +107,7 @@
     background-color: #EAE5EB;//背景颜色
     // border-color: #212121;//边框色
     margin-bottom: 0;//底部 margin 不撑开距离
+    width: auto;
 }
 
 @media (min-width: 768px) {
@@ -180,13 +182,16 @@
     width: 200px;//这里用指定宽度把btn拉得更长
 }
 
-//下面是login界面的设计
+//下面是登录/注册界面的设计
 body
 {
     background: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg') fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
+    width :auto;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 form
@@ -210,3 +215,16 @@ padding: 10px;
 }
 
 .center{text-align:center;}
+
+//搜索功能设计
+.search-id {
+  width: 200px;
+  padding-top: 7px;
+}
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.jobs-search-form{
+  margin-top: 8px;
+}
